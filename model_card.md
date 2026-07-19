@@ -64,12 +64,12 @@ Prompts:
 Where the system struggles or behaves unfairly. 
 
 Prompts:  
-
 - Features it does not consider  
 - Genres or moods that are underrepresented  
 - Cases where the system overfits to one preference  
 - Ways the scoring might unintentionally favor some users  
 
+One weakness I discovered is that the recommender relies heavily on genre, mood, and energy while ignoring other important factors such as favorite artists, lyrics, and listening history. Because the dataset only contains 15 songs, some genres and moods have very few choices, which can cause the same songs to appear repeatedly. During my weight-shift experiment, increasing the importance of energy caused songs with similar energy levels to rank highly even when they did not match the user's preferred genre or mood. This shows that the scoring system can create a small filter bubble by repeatedly recommending songs that share the most heavily weighted features.
 ---
 
 ## 7. Evaluation  
@@ -84,6 +84,10 @@ Prompts:
 - Any simple tests or comparisons you ran  
 
 No need for numeric metrics unless you created some.
+
+   The recommendations mostly matched my expectations. High-Energy Pop favored Sunrise City, Chill Lofi favored Library Rain, and Deep Intense Rock favored Storm Runner because they matched the user's preferences. The Conflicting Sad Energy profile showed that genre and mood can outweigh energy, and songs with similar energy can still rank highly even if other features don't match.
+
+   After reducing the genre weight and doubling the energy weight, songs with similar energy ranked higher even when their genre or mood did not match. The top songs mostly stayed the same, but energy had a much stronger influence on the results. This made the recommendations different, but not always more accurate.
 
 ---
 
