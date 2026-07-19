@@ -32,6 +32,9 @@ Prompts:
 
 Avoid code here. Pretend you are explaining the idea to a friend who does not program.
 
+The recommender compares each song's features with the user's preferences. It checks whether the genre and mood match and then compares how close the song's energy level is to the user's preferred energy. Songs that match more of the user's preferences receive higher scores. After every song is scored, the recommender ranks them from highest to lowest and returns the top recommendations along with explanations. Compared to the starter code, I implemented the scoring system, ranking logic, explanations, and CSV loading.
+
+
 ---
 
 ## 4. Data  
@@ -45,6 +48,8 @@ Prompts:
 - Did you add or remove data  
 - Are there parts of musical taste missing in the dataset  
 
+The dataset contains **15 songs** stored in `songs.csv`. The songs include genres such as pop, rock, lofi, jazz, EDM, ambient, folk, blues, hip hop, synthwave, and electronic. They also include different moods such as happy, chill, intense, relaxed, focused, energetic, melancholy, and euphoric. I added additional songs to expand the dataset, but it is still small and does not include features like lyrics, listening history, artist popularity, or user ratings.
+
 ---
 
 ## 5. Strengths  
@@ -56,6 +61,8 @@ Prompts:
 - User types for which it gives reasonable results  
 - Any patterns you think your scoring captures correctly  
 - Cases where the recommendations matched your intuition  
+
+The recommender works well when a user's preferences closely match songs in the dataset. For example, the High-Energy Pop profile correctly recommended **Sunrise City**, the Chill Lofi profile recommended **Library Rain**, and the Deep Intense Rock profile recommended **Storm Runner**. The scoring system also explains why each song was recommended, making the results easy to understand.
 
 ---
 
@@ -102,6 +109,12 @@ Prompts:
 - Improving diversity among the top results  
 - Handling more complex user tastes  
 
+If I continued this project, I would:
+- Add more songs, genres, and moods to improve recommendation variety.
+- Include additional features such as tempo, danceability, valence, favorite artists, and listening history.
+- Improve the explanations by showing a detailed breakdown of how each song earned its score.
+- Add diversity to the recommendations so similar songs do not always appear together.
+
 ---
 
 ## 9. Personal Reflection  
@@ -113,3 +126,6 @@ Prompts:
 - What you learned about recommender systems  
 - Something unexpected or interesting you discovered  
 - How this changed the way you think about music recommendation apps  
+
+This project helped me understand how recommendation systems compare user preferences with item features to generate personalized suggestions. I was surprised that a relatively simple scoring algorithm could still produce recommendations that felt reasonable. AI tools were helpful for brainstorming ideas, debugging code, and explaining concepts, but I still had to test everything myself to make sure it worked correctly. If I continued this project, I would build a larger dataset and experiment with more advanced recommendation techniques.
+
