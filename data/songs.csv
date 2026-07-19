@@ -9,3 +9,8 @@ id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
 8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
 9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
 10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
+11,Desert Mirage,Sand Vega,electronic,energetic,0.88,128,0.72,0.85,0.08
+12,Grandma's Porch,Willow Creek,folk,relaxed,0.30,86,0.68,0.45,0.94
+13,Concrete Dreams,Blocktown,hip hop,confident,0.79,95,0.61,0.90,0.12
+14,Velvet Sorrow,Ash Marlow,blues,melancholy,0.44,68,0.28,0.50,0.66
+15,Festival Sunrise,Pulse Nation,edm,euphoric,0.95,140,0.83,0.92,0.03
